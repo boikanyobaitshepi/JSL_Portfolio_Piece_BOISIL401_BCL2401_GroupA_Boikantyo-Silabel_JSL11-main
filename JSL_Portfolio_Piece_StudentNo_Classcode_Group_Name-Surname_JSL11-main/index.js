@@ -1,6 +1,6 @@
 // TASK: import helper functions from utils
 // TASK: import initialData
-import {getTasks, createNewTask, putTask, deleteTask} from "./utils/taskFunctions.js";
+import {getTasks, createNewTask, putTask, deleteTask,} from "./utils/taskFunctions.js";
 import {initialData} from "./initialData.js";
 
 
@@ -17,6 +17,7 @@ function initializeData() {
     console.log('Data already exists in localStorage');
   }
 }
+initializeData();
 
 // TASK: Get elements from the DOM
 const elements = {
@@ -33,7 +34,7 @@ function fetchAndDisplayBoardsAndTasks() {
   displayBoards(boards);
   if (boards.length > 0) {
     const localStorageBoard = JSON.parse(localStorage.getItem("activeBoard"))
-    activeBoard = localStorageBoard ? localStorageBoard ;  boards[0]; 
+    activeBoard = localStorageBoard ? localStorageBoard  boards[0]; 
     elements.headerBoardName.textContent = activeBoard
     styleActiveBoard(activeBoard)
     refreshTasksUI();
