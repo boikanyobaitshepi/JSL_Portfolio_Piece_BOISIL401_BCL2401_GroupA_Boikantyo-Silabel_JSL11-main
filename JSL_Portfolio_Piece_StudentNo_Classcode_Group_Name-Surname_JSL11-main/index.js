@@ -28,6 +28,15 @@ const elements = {
  showSideBarBtn: document.getElementById("show-side-bar-btn"),
  sideBar: document.querySelector(".side-bar"),
 
+// editTaskModal: document.getElementById("edit-task-modal-window"),
+ // Main Layout: Header with board title, add task button, and main content area for task columns.
+ headerBoardName: document.getElementById("header-board-name"),
+ dropDownBtn: document.getElementById("dropdownBtn"),
+ createNewTaskBtn: document.getElementById("add-new-task-btn"),
+ deleteBoardBtn: document.getElementById("deleteBoardBtn"),
+ editBoardBtn: document.getElementById("edit-board-btn"),
+
+
 }
 
 let activeBoard = ""
