@@ -95,6 +95,11 @@ function displayBoards(boards) {
   });
 
 }
+const statusSelection = {
+  todo: "TODO",
+  doing: "DOING",
+  done: "DONE",
+ };
 
 // Filters tasks corresponding to the board name and displays them on the DOM.
 // TASK: Fix Bugs
