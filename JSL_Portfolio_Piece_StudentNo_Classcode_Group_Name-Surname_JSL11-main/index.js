@@ -35,7 +35,15 @@ const elements = {
  createNewTaskBtn: document.getElementById("add-new-task-btn"),
  deleteBoardBtn: document.getElementById("deleteBoardBtn"),
  editBoardBtn: document.getElementById("edit-board-btn"),
-
+// Task Columns: Display tasks grouped by status (TODO, DOING, DONE).
+columnDivs: document.querySelectorAll(".column-div"),
+// New Task Modal: Form for creating a new task.
+modalWindow: document.getElementById("new-task-modal-window"),
+titleInput: document.getElementById("title-input"),
+descriptionInput: document.getElementById("desc-input"),
+selectStatus: document.getElementById("select-status"),
+createTaskBtn: document.getElementById("create-task-btn"),
+cancelAddTaskBtn: document.getElementById("cancel-add-task-btn"),
 
 }
 
