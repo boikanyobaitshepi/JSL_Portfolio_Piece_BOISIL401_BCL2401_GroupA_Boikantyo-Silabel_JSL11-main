@@ -307,7 +307,14 @@ function openEditTaskModal(task) {
  
 
   // Delete task using a helper function and close the task modal
-
+  elements.deleteTaskBtn.onclick = () => {
+    if (confirm("Are you sure you want to delete this task?")) {
+     // 🟥 Extra feature
+     deleteTask(task.id);
+     toggleModal(false, elements.editTaskModal);
+     refreshTasksUI();
+    }
+   };
 
   toggleModal(true, elements.editTaskModal); // Show the edit task modal
 }
