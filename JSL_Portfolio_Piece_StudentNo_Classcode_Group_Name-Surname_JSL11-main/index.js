@@ -255,10 +255,36 @@ function addTask(event) {
 
 
 function toggleSidebar(show) {
+  elements.sideBar.style.display = show ? "block" : "none";
+ elements.showSideBarBtn.style.display = show ? "none" : "block";
+ localStorage.setItem("showSideBar", show);
  
 }
 
 function toggleTheme() {
+  const isLightTheme = document.body.classList.contains("light-theme");
+ document.body.classList.toggle("light-theme");
+ const logo = document.getElementById("logo");
+ logo.classList.add("light-theme");
+ logo.classList.toggle("light-theme");
+ localStorage.setItem(
+  "light-theme",
+  isLightTheme
+   ? (logo.src = "./assets/logo-dark.svg")
+   : (logo.src = "./assets/logo-light.svg")
+ );
+ localStorage.setItem("light-theme", !isLightTheme ? "enabled" : "disabled");
+ // isLightTheme ? logo.src = './assets/logo-dark.svg' : logo.src = './assets/logo-light.svg';
+ // localStorage.setItem('light-theme', !isLightTheme ? 'enabled' : 'disabled');
+ if (isLightTheme) {
+  logo.src = "./assets/logo-dark.svg";
+  localStorage.setItem("logo", "./assets/logo-dark.svg");
+  localStorage.setItem("light-theme", "disabled");
+ } else {
+  logo.src = "./assets/logo-light.svg";
+  localStorage.setItem("logo", "./assets/logo-light.svg");
+  localStorage.setItem("light-theme", "enabled");
+ }
  
 }
 
