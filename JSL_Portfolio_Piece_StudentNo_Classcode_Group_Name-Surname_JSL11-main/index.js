@@ -204,7 +204,7 @@ function setupEventListeners() {
 
   // Show sidebar event listener
   elements.hideSideBarBtn.onclick=() => toggleSidebar(false);
-  elements.showSideBarBtn.onclick() => toggleSidebar(true);
+  elements.showSideBarBtn.onclick=() => toggleSidebar(true);
 
   // Theme switch event listener
   elements.themeSwitch.addEventListener('change', toggleTheme);
@@ -224,7 +224,7 @@ function setupEventListeners() {
 // Toggles tasks modal
 // Task: Fix bugs
 function toggleModal(show, modal = elements.modalWindow) {
-  modal.style.display = show ? 'block' => 'none'; 
+  modal.style.display = show ? 'block' : 'none'; 
 }
 
 /*************************************************************************************************************************************************
