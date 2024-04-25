@@ -111,7 +111,6 @@ import {
    column.innerHTML = `<div class="column-head-div">
                            <span class="dot" id="${status}-dot"></span>
                            <h4 class="columnHeader">${statusSelections.toUpperCase()}</h4>
-                           <h4 class="columnHeader">${statusSelections}</h4>
                          </div>`;
  
    const tasksContainer = document.createElement("div");
