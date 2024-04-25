@@ -1,15 +1,7 @@
 Task Management App
 This is a task management web application designed to help you organize your tasks efficiently. It allows you to create, edit, and delete tasks, categorizing them into different boards based on their status (TODO, DOING, DONE).
 
-Getting Started
-To get started with the project, follow these steps:
-
-Clone the repository to your local machine.
-Open the project directory in your code editor.
-Ensure you have a modern web browser installed.
-Open the index.html file in your web browser.
-Features
-Board Navigation: Easily switch between different boards to view tasks categorized by status.
+Board Navigation:it is easy to  switch between different boards to view tasks categorized by status.
 Task Management: Create, edit, and delete tasks seamlessly.
 Responsive Design: The application is responsive and works well across different devices.
 Usage
